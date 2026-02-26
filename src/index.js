@@ -23,6 +23,13 @@ async function main() {
   const answer = await ask('Do you want to start the adventure? (yes/no) ');
   // se l'utente risponde "yes", continua l'avventura, altrimenti termina
   // scriverlo
+  if (answer.toLowerCase() === 'yes') {
+    console.log('Starting the adventure...');
+    // Continua l'avventura qui
+  } 
+  else {
+    console.log('Goodbye!');
+  }
   
   rl.close();
 }
